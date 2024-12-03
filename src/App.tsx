@@ -14,7 +14,7 @@ import CustomCursor from './components/CustomCursor';
 import WebDevelopment from './pages/WebDevelopment';
 import UiUxDesign from './pages/UiUxDesign';
 import WebApps from './pages/WebApps';
-import DigitalMarketing from './pages/DigitalMarketing';
+import AITools from './pages/AITools';
 import DummyPage from './pages/DummyPage';
 
 function App() {
@@ -64,7 +64,7 @@ function App() {
               <Route path="/web-development" element={<WebDevelopment />} />
               <Route path="/uiux-design" element={<UiUxDesign />} />
               <Route path="/web-apps" element={<WebApps />} />
-              <Route path="/digital-marketing" element={<DigitalMarketing />} />
+              <Route path="/ai-tools" element={<AITools />} />
               <Route path="/dummy" element={<DummyPage />} />
             </Routes>
             <Footer />

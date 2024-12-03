@@ -12,40 +12,40 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured online shopping platform with real-time inventory management",
+      title: "SRMHS",
+      description: "A user-friendly landing page for a school, enhancing its online presence and accessibility",
       image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
-      tags: ["React", "Node.js", "MongoDB"],
-      link: "https://example.com/ecommerce"
+      tags: ["Bootstrap", "CSS", "JavaScript"],
+      link: "https://srmhs.com"
     },
     {
-      title: "Healthcare Dashboard",
-      description: "Interactive analytics dashboard for healthcare providers",
+      title: "DeepChartify",
+      description: "An AI Interactive analytics generating tool where the users can upload and prompt it based on the data provided by the user",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-      tags: ["Vue.js", "D3.js", "Firebase"],
-      link: "https://example.com/healthcare"
+      tags: ["Typescript", "LlamaIndex", "React.js"],
+      link: "https://100xdeepchartify.netlify.app/"
     },
-    {
-      title: "Social Media App",
-      description: "Modern social networking platform with real-time features",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
-      tags: ["React Native", "GraphQL", "AWS"],
-      link: "https://example.com/social"
-    },
-    {
-      title: "AI-Powered Analytics",
-      description: "Advanced analytics platform using machine learning algorithms",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800",
-      tags: ["Python", "TensorFlow", "AWS"],
-      link: "https://example.com/analytics"
-    },
-    {
-      title: "Educational Platform",
-      description: "Interactive learning management system with real-time collaboration",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800",
-      tags: ["Next.js", "Socket.io", "PostgreSQL"],
-      link: "https://example.com/education"
-    }
+    // {
+    //   title: "Social Media App",
+    //   description: "Modern social networking platform with real-time features",
+    //   image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
+    //   tags: ["React Native", "GraphQL", "AWS"],
+    //   link: "https://example.com/social"
+    // },
+    // {
+    //   title: "AI-Powered Analytics",
+    //   description: "Advanced analytics platform using machine learning algorithms",
+    //   image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800",
+    //   tags: ["Python", "TensorFlow", "AWS"],
+    //   link: "https://example.com/analytics"
+    // },
+    // {
+    //   title: "Educational Platform",
+    //   description: "Interactive learning management system with real-time collaboration",
+    //   image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800",
+    //   tags: ["Next.js", "Socket.io", "PostgreSQL"],
+    //   link: "https://example.com/education"
+    // }
   ];
 
   const nextProject = () => {

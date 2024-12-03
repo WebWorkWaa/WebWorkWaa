@@ -14,33 +14,33 @@ const Testimonials = () => {
     {
       name: "Sarah Johnson",
       role: "CEO, TechStart",
-      content: "web.work.waa transformed our online presence completely. Their attention to detail and creative solutions exceeded our expectations.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lacinia nisl. Vivamus at ultrices nunc. Vivamus vitae feugiat ex.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200"
     },
     {
       name: "Michael Chen",
       role: "Founder, InnovateLab",
-      content: "Working with their team was a game-changer for our startup. They delivered a beautiful, functional website that perfectly represents our brand.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lacinia nisl. Vivamus at ultrices nunc. Vivamus vitae feugiat ex.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200"
     },
-    {
-      name: "Emily Rodriguez",
-      role: "Marketing Director, GrowthCo",
-      content: "The UI/UX expertise they brought to our project was exceptional. Our conversion rates have improved significantly since the redesign.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200"
-    },
-    {
-      name: "David Park",
-      role: "CTO, FutureTech",
-      content: "Their development team's technical expertise is outstanding. They delivered a complex web application ahead of schedule.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
-    },
-    {
-      name: "Lisa Thompson",
-      role: "Product Manager, InnovateX",
-      content: "The attention to detail in UI/UX design was remarkable. Our user engagement metrics have doubled since launch.",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=200"
-    }
+    // {
+    //   name: "Emily Rodriguez",
+    //   role: "Marketing Director, GrowthCo",
+    //   content: "The UI/UX expertise they brought to our project was exceptional. Our conversion rates have improved significantly since the redesign.",
+    //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200"
+    // },
+    // {
+    //   name: "David Park",
+    //   role: "CTO, FutureTech",
+    //   content: "Their development team's technical expertise is outstanding. They delivered a complex web application ahead of schedule.",
+    //   image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
+    // },
+    // {
+    //   name: "Lisa Thompson",
+    //   role: "Product Manager, InnovateX",
+    //   content: "The attention to detail in UI/UX design was remarkable. Our user engagement metrics have doubled since launch.",
+    //   image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=200"
+    // }
   ];
 
   const nextTestimonial = () => {
