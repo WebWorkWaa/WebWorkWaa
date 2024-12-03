@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Palette, Rocket } from 'lucide-react';
+import { Code2, Palette, Rocket} from 'lucide-react';
+import { RiRobot2Line } from "react-icons/ri"
 
 const Hero = () => {
   return (
@@ -22,8 +23,8 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold text-white mb-6"
           >
-            Crafting Digital
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Excellence</span>
+            Everything is
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Designed</span>
           </motion.h1>
 
           <motion.p
@@ -32,7 +33,7 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
           >
-            We transform ideas into exceptional digital experiences through innovative web design, development, and UI/UX solutions.
+            We transform ideas into exceptional digital experiences through innovation.
           </motion.p>
 
           <motion.div
@@ -42,22 +43,23 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-8 mt-16"
           >
             {[
-              { icon: <Code2 className="w-8 h-8" />, title: "Web Development" },
-              { icon: <Palette className="w-8 h-8" />, title: "UI/UX Design" },
-              { icon: <Rocket className="w-8 h-8" />, title: "Web Apps" }
+              { icon: <Code2 className="w-8 h-8" />, title: "Web Development", link: "/web-development" },
+              { icon: <Palette className="w-8 h-8" />, title: "UI/UX Design", link: "/ui-ux-design" },
+              { icon: <Rocket className="w-8 h-8" />, title: "Web Apps", link: "/web-apps" },
+              { icon: <RiRobot2Line className="w-8 h-8" />, title: "AI Tools", link: "/ai-tools" }
             ].map((service, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                className="flex flex-col items-center p-6 bg-white/5 backdrop-blur-lg rounded-xl border border-white/10 w-64"
-              >
-                <div className="text-purple-400 mb-4">
+              <a href={service.link} key={index} className="no-underline">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center p-6 bg-white/5 backdrop-blur-lg rounded-xl border border-white/10 w-64"
+                >
                   {service.icon}
-                </div>
-                <h3 className="text-white font-semibold text-lg">{service.title}</h3>
-              </motion.div>
+                  <h3 className="mt-4 text-lg font-semibold text-white">{service.title}</h3>
+                </motion.div>
+              </a>
             ))}
           </motion.div>
+
         </motion.div>
       </div>
     </div>

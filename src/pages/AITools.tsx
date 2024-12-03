@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const DigitalMarketing = () => {
+const AITools = () => {
   return (
     <div className="pt-32 min-h-screen bg-black">
       <div className="container mx-auto px-6">
@@ -11,22 +11,20 @@ const DigitalMarketing = () => {
           transition={{ duration: 0.6 }}
           className="bg-white/5 backdrop-blur-lg rounded-xl p-8 border border-white/10"
         >
-          <h1 className="text-4xl font-bold text-white mb-8">Digital Marketing Services</h1>
+          <h1 className="text-4xl font-bold text-white mb-8">AI Tools</h1>
           
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-semibold text-white mb-4">Growth-Driven Marketing</h2>
+              <h2 className="text-2xl font-semibold text-white mb-4">Revolutionizing App Development with LLMs</h2>
               <p className="text-gray-400 mb-6">
-                We help businesses grow their online presence through strategic digital marketing
-                campaigns. Our data-driven approach ensures maximum ROI and sustainable growth.
+              We create cutting-edge applications powered by advanced language models to solve real-world challenges and enhance user experiences. Our AI-driven solutions are tailored to your unique requirements.
               </p>
               <ul className="space-y-4">
                 {[
-                  'SEO Optimization',
-                  'Content Marketing',
-                  'Social Media Management',
-                  'Email Marketing',
-                  'PPC Campaigns'
+                  'Custom AI App Development',
+                  'Natural Language Processing (NLP)',
+                  'AI-Powered Automation',
+                  'Generative AI Integration'
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-300">
                     <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
@@ -38,20 +36,20 @@ const DigitalMarketing = () => {
             
             <div className="space-y-8">
               <div className="bg-purple-500/10 rounded-lg p-6 border border-purple-500/20">
-                <h3 className="text-xl font-semibold text-white mb-3">Marketing Strategy</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Development Strategy</h3>
                 <ul className="space-y-3 text-gray-400">
-                  <li>1. Market Analysis</li>
-                  <li>2. Strategy Development</li>
-                  <li>3. Campaign Execution</li>
-                  <li>4. Performance Tracking</li>
-                  <li>5. Optimization & Scaling</li>
+                  <li>1. Requirement Analysis</li>
+                  <li>2. LLM Model Selection & Fine-Tuning</li>
+                  <li>3. App Design & Development</li>
+                  <li>4. Testing & Deployment</li>
+                  <li>5. Maintenance & Scaling</li>
                 </ul>
               </div>
               
               <div className="bg-white/5 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-white mb-4">Boost Your Online Presence</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">Take Your App to the Next Level</h3>
                 <p className="text-gray-400 mb-4">
-                  Ready to take your digital marketing to the next level?
+                Ready to harness the power of AI for your app?
                 </p>
                 <motion.button
                   whileHover={{ scale: 1.02 }}
@@ -69,4 +67,4 @@ const DigitalMarketing = () => {
   );
 };
 
-export default DigitalMarketing;
+export default AITools;
