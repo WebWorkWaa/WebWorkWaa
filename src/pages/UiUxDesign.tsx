@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const UiUxDesign = () => {
   return (
@@ -58,7 +59,7 @@ const UiUxDesign = () => {
                   whileTap={{ scale: 0.98 }}
                   className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-semibold"
                 >
-                  Get in Touch
+                  <Link to="/#contact">Get in Touch</Link>
                 </motion.button>
               </div>
             </div>
