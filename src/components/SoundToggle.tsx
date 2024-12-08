@@ -4,7 +4,7 @@ import useSound from 'use-sound';
 
 const SoundToggle = () => {
   const [isMuted, setIsMuted] = useState(true);
-  const [play, { stop }] = useSound('audio.mp3', { 
+  const [play, { stop }] = useSound('./sounds/audio.mp3', { 
     loop: true,
     volume: 0.4 
   });
