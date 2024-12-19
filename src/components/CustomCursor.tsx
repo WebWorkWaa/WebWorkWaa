@@ -4,18 +4,36 @@ import { motion } from 'framer-motion';
 const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isPointer, setIsPointer] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Track if the cursor should be visible
 
   useEffect(() => {
+    const updateVisibility = () => {
+      // Hide the cursor on screens less than 768px width (mobile and tablet)
+      setIsVisible(window.innerWidth >= 768);
+    };
+
+    updateVisibility(); // Check on mount
+    window.addEventListener('resize', updateVisibility); // Recheck on resize
+
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-      
-      const target = e.target as HTMLElement;
-      setIsPointer(window.getComputedStyle(target).cursor === 'pointer');
+      if (isVisible) {
+        setMousePosition({ x: e.clientX, y: e.clientY });
+        const target = e.target as HTMLElement;
+        setIsPointer(window.getComputedStyle(target).cursor === 'pointer');
+      }
     };
 
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+
+    return () => {
+      window.removeEventListener('resize', updateVisibility);
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [isVisible]);
+
+  if (!isVisible) {
+    return null; // Do not render the custom cursor on smaller screens
+  }
 
   return (
     <>
@@ -35,7 +53,7 @@ const CustomCursor = () => {
           scale: isPointer ? 1.5 : 1,
         }}
         transition={{
-          type: "spring",
+          type: 'spring',
           mass: 0.6,
           stiffness: 50,
           damping: 10,
