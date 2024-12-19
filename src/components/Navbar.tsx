@@ -29,7 +29,7 @@ const Navbar = () => {
               animate={{ opacity: 1, x: 0 }}
               className="text-white font-bold text-2xl custom-font"
             >
-              web.work.waa
+                <span className="font-havelock">web.work.waa</span>
             </motion.div>
           </a>
 
