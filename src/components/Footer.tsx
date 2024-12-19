@@ -39,8 +39,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Services</h4>
             <ul className="space-y-4 text-gray-400">
               <li>
+                <a href="/ai-tools" className="hover:text-purple-400 transition-colors">
+                  AI Tools
+                </a>
+              </li>
+              <li>
                 <a href="/web-development" className="hover:text-purple-400 transition-colors">
-                  Web Development
+                  Landing Pages
                 </a>
               </li>
               <li>
@@ -51,11 +56,6 @@ const Footer = () => {
               <li>
                 <a href="/web-apps" className="hover:text-purple-400 transition-colors">
                   Web Applications
-                </a>
-              </li>
-              <li>
-                <a href="/ai-tools" className="hover:text-purple-400 transition-colors">
-                  AI Tools
                 </a>
               </li>
             </ul>
@@ -80,7 +80,7 @@ const Footer = () => {
               {[ 
                 { icon: Facebook, url: 'https://www.facebook.com/' },
                 { icon: Twitter, url: 'https://twitter.com/' },
-                { icon: Instagram, url: 'https://www.instagram.com/web.work.waa/' },
+                { icon: Instagram, url: 'https://www.instagram.com/webworkwaa/' },
                 { icon: Linkedin, url: 'https://www.linkedin.com/in/' },
                 { icon: Mail, url: 'mailto:webworkwaa@gmail.com' }
               ].map((social, index) => (

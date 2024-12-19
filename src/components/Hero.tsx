@@ -43,10 +43,10 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-8 mt-16"
           >
             {[
-              { icon: <Code2 className="w-8 h-8" />, title: "Web Development", link: "/web-development" },
+              { icon: <RiRobot2Line className="w-8 h-8" />, title: "AI Tools", link: "/ai-tools" },
+              { icon: <Code2 className="w-8 h-8" />, title: "Landing Pages", link: "/web-development" },
               { icon: <Palette className="w-8 h-8" />, title: "UI/UX Design", link: "/ui-ux-design" },
-              { icon: <Rocket className="w-8 h-8" />, title: "Web Apps", link: "/web-apps" },
-              { icon: <RiRobot2Line className="w-8 h-8" />, title: "AI Tools", link: "/ai-tools" }
+              { icon: <Rocket className="w-8 h-8" />, title: "Web Apps", link: "/web-apps" }
             ].map((service, index) => (
               <a href={service.link} key={index} className="no-underline">
                 <motion.div
