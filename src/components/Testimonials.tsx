@@ -12,17 +12,17 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechStart",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lacinia nisl. Vivamus at ultrices nunc. Vivamus vitae feugiat ex.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200"
+      name: "Jai Harsha Gunda",
+      role: "Executive, SRMHS",
+      content: "The color vibrance and layout are visually appealing, creating an engaging and pleasant user experience.",
+      image: "../images/testimonials/testimonial1.jpg"
     },
-    {
-      name: "Michael Chen",
-      role: "Founder, InnovateLab",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lacinia nisl. Vivamus at ultrices nunc. Vivamus vitae feugiat ex.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200"
-    },
+    // {
+    //   name: "Michael Chen",
+    //   role: "Founder, InnovateLab",
+    //   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lacinia nisl. Vivamus at ultrices nunc. Vivamus vitae feugiat ex.",
+    //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200"
+    // },
     // {
     //   name: "Emily Rodriguez",
     //   role: "Marketing Director, GrowthCo",
@@ -53,12 +53,16 @@ const Testimonials = () => {
 
   const visibleTestimonials = () => {
     const items = [];
-    for (let i = 0; i < 3; i++) {
+    const isMobile = window.innerWidth < 768; // Adjust breakpoint if needed
+    const testimonialsToShow = isMobile ? 1 : 3;
+  
+    for (let i = 0; i < testimonialsToShow; i++) {
       const index = (currentIndex + i) % testimonials.length;
       items.push(testimonials[index]);
     }
     return items;
   };
+  
 
   return (
     <section id="testimonials" className="py-20 bg-black relative">
