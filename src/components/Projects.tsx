@@ -16,7 +16,7 @@ const Projects = () => {
       description: "A user-friendly landing page for a school, enhancing its online presence and accessibility",
       image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
       tags: ["Bootstrap", "CSS", "JavaScript"],
-      link: "https://srmhs.com"
+      link: "https://webworkwaa.github.io/SRMHS/"
     },
     {
       title: "DeepChartify",
@@ -24,6 +24,13 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
       tags: ["Typescript", "LlamaIndex", "React.js"],
       link: "https://100xdeepchartify.netlify.app/"
+    },
+    {
+      title: "Aruna Home Cleaning",
+      description: "Developed a responsive, SEO-optimized website for Aruna Home Cleaning to showcase their professional home cleaning services and boost local client reach.",
+      image: "https://images.unsplash.com/photo-1686178827149-6d55c72d81df?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+      tags: ["Typescript", "React.js"],
+      link: "https://arunahomecleaning.in"
     },
     // {
     //   title: "Social Media App",

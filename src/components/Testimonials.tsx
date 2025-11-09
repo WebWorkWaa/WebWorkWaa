@@ -17,12 +17,12 @@ const Testimonials = () => {
       content: "The color vibrance and layout are visually appealing, creating an engaging and pleasant user experience.",
       image: "../images/testimonials/testimonial1.jpg"
     },
-    // {
-    //   name: "Michael Chen",
-    //   role: "Founder, InnovateLab",
-    //   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lacinia nisl. Vivamus at ultrices nunc. Vivamus vitae feugiat ex.",
-    //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200"
-    // },
+    {
+      name: "Rahul JM",
+      role: "Owner, Aruna Home Cleaning",
+      content: "The website turned out better than we imagined. It looks professional, loads fast, and is easy for our customers to navigate. We got more inquiries within days of launching. The entire process was smooth, and the work was delivered right on time.",
+      image: "../images/testimonials/testimonial-default.jpg"
+    },
     // {
     //   name: "Emily Rodriguez",
     //   role: "Marketing Director, GrowthCo",
